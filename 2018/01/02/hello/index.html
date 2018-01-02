@@ -6,13 +6,15 @@
   <meta http-equiv="cache-control" content="no-cache">
   <meta http-equiv="expires" content="0">
   
-  <title>Archives: 2015/11 | Hexo</title>
+  <title>hello | Hexo</title>
   <meta name="author" content="John Doe">
+  
+  <meta name="description" content="this is test!!!">
   
   
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-  
+  <meta property="og:title" content="hello"/>
   <meta property="og:site_name" content="Hexo"/>
 
   
@@ -113,172 +115,136 @@ var _hmt = _hmt || [];
   	<div class="content">
     	 
 
-<!-- title -->
-<div class="page-header">
-  <h1 class="archive-title"><i class="fa fa-archive"></i> 2015/11</h1>
-</div>
 
-<div class="row page">
-  <!-- cols -->
-  
-  <div class="col-md-9">
 	
-
-	  <div id="top_search"></div>
-
-	  <div class="archive">
-		
-		
-		
-			
-			
-			<h4 class="archive-ul" data-toggle="collapse" data-target="#2018">2018<b class="caret"></b></h4>
-			<ul id="2018" class="collapse in">
-			
-		
-		<li class="listing-item">
-		<span class="date_class"> 2018-01-02 </span> &raquo;
-		
-		   <span class="title"><a href="/2018/01/02/hello/"  title="this is test!!!" >hello</a></span>
-		
-		</li>			
-		
-		
-		
-			
-			</ul>
-			
-			
-			<h4 class="archive-ul" data-toggle="collapse" data-target="#2017">2017<b class="caret"></b></h4>
-			<ul id="2017" class="collapse in">
-			
-		
-		<li class="listing-item">
-		<span class="date_class"> 2017-12-29 </span> &raquo;
-		
-		   <span class="title"><a href="/2017/12/29/test/" >test</a></span>
-		
-		</li>			
-		
-		
-		
-		<li class="listing-item">
-		<span class="date_class"> 2017-12-29 </span> &raquo;
-		
-		   <span class="title"><a href="/2017/12/29/hello-world/" >Hello World</a></span>
-		
-		</li>			
-		
-		
-		
-			
-			</ul>
-			
-			
-			<h4 class="archive-ul" data-toggle="collapse" data-target="#2015">2015<b class="caret"></b></h4>
-			<ul id="2015" class="collapse in">
-			
-		
-		<li class="listing-item">
-		<span class="date_class"> 2015-11-25 </span> &raquo;
-		
-		   <span class="title"><a href="/2015/11/25/linux/"  title="这篇文章是关于Freemind.386的介绍." >Freemind.386中文说明</a></span>
-		
-		</li>			
-		
-		</ul>
+		<div class="page-header">
+			<h1> hello</h1>
 		</div>
-
-</div> <!-- col-md-9/col-md-12 -->
-
-
-<div class="col-md-3">
-	<div id="sidebar">
 	
-			
-  <div id="site_search">
-   <div class="form-group">
-    <input type="text" id="local-search-input" name="q" results="0" placeholder="Search" class="st-search-input st-default-search-input form-control"/>
-   </div>  
-  <div id="local-search-result"></div>
-  </div>
 
 
-		
-			
-	<div class="widget">
-		<h4>Categories</h4>
-		<ul class="tag_box inline list-unstyled">
-		
-			<li><a href="/categories/code/">code<span>2</span></a></li>
-		
-		</ul>
+
+<div class="row post">
+	<!-- cols -->
+	
+	<div id="top_meta"></div>
+	<div class="col-md-9">
+	
+
+	<!-- content -->
+	<div class="mypage">		
+	  
+		 <div class="alert alert-success description">
+			<i class="fa fa-info-circle"></i> this is test!!!
+		 </div> <!-- alert -->
+	  		
+
+	  <p>首先启动一个Git Bash窗口（非Windows用户直接打开终端）</p>
+<p>执行：</p>
+<p><code>cd ~/.ssh</code></p>
+<p>如果返回“… No such file or directory”，说明没有生成过SSH Key，直接进入第4步。否则进入第3步备份!</p>
+<a id="more"></a>
+<p>备份：</p>
+<p>mkdir key_backup mv id_isa* key_backup</p>
+<p>生成新的Key：（引号内的内容替换为你自己的邮箱）</p>
+<p><code>ssh-keygen -t rsa -C &quot;your_email@youremail.com&quot;</code><br>输出显示：</p>
+<blockquote>
+<p>Generating public/private rsa key pair. Enter file in which to save the key<br>(/Users/your_user_directory/.ssh/id_rsa):<press enter=""><br>直接回车，不要修改默认路劲。</press></p>
+<p>Enter passphrase (empty for no passphrase):<enter a="" passphrase=""><br>Enter same passphrase again:<enter passphrase="" again=""><br>设置一个密码短语，在每次远程操作之前会要求输入密码短语！闲麻烦可以直接回车，不设置。</enter></enter></p>
+</blockquote>
+<p>成功：</p>
+<p>Your identification has been saved in /Users/your_user_directory/.ssh/id_rsa. Your public key has been saved in /Users/your_user_directory/.ssh/id_rsa.pub. The key fingerprint is: … …</p>
+<p>提交公钥：</p>
+<p>6.1 找到.ssh文件夹，用文本编辑器打开“id_rsa.pub”文件，复制内容到剪贴板。</p>
+<p>6.2 打开 <a href="https://github.com/settings/ssh" target="_blank" rel="noopener">https://github.com/settings/ssh</a> ，点击 Add SSH Key 按钮，粘贴进去保存即可。</p>
+<pre><code class="py"><span class="keyword">import</span> requests
+<span class="keyword">print</span> <span class="string">"test"</span>
+</code></pre>
+	  
 	</div>
 
-		
-			
-	<div class="widget">
-		<h4>Tag Cloud</h4>
-		<ul class="tag_box inline list-unstyled">		
-		
-			<li><a href="/tags/hack/">hack<span>1</span></a></li>
-		
-			<li><a href="/tags/sec/">sec<span>1</span></a></li>
-		
-			<li><a href="/tags/hexo/">hexo<span>1</span></a></li>
-		
-		 
-		</ul>
+	<div>
+  	<center>
+	<div class="pagination">
+
+    
+    
+    <a type="button" class="btn btn-default disabled"><i class="fa fa-arrow-circle-o-left"></i>Prev</a>
+    
+
+    <a href="/" type="button" class="btn btn-default"><i class="fa fa-home"></i>Home</a>
+    
+    <a href="/2017/12/29/test/" type="button" class="btn btn-default ">Next<i
+                class="fa fa-arrow-circle-o-right"></i></a>
+    
+
+    
+</div>
+
+    </center>
 	</div>
+	
+	<!-- comment -->
+	
+<section id="comment">
+    <h2 class="title">Comments</h2>
+
+    
+</section>
 
 
+	</div> <!-- col-md-9/col-md-12 -->
 		
-			
-<div class="widget">
-  <h4>Recent Posts</h4>
-  <ul class="entry list-unstyled">
-    
-      <li>
-        <a href="/2018/01/02/hello/"  title="this is test!!!" ><i class="fa fa-file-o"></i>hello</a>
-      </li>
-    
-      <li>
-        <a href="/2017/12/29/test/" ><i class="fa fa-file-o"></i>test</a>
-      </li>
-    
-      <li>
-        <a href="/2017/12/29/hello-world/" ><i class="fa fa-file-o"></i>Hello World</a>
-      </li>
-    
-      <li>
-        <a href="/2015/11/25/linux/"  title="这篇文章是关于Freemind.386的介绍." ><i class="fa fa-file-o"></i>Freemind.386中文说明</a>
-      </li>
-    
-  </ul>
-</div>
+	
+	<div id="side_meta">
+		<div class="col-md-3" id="post_meta"> 
 
+	<!-- date -->
+	
+	<div class="meta-widget">
+	<i class="fa fa-clock-o"></i>
+	2018-01-02 
+	</div>
+	
+
+	<!-- categories -->
+    
+	<div class="meta-widget">
+	<a data-toggle="collapse" data-target="#categorys"><i class="fa fa-folder"></i></a>	
+    <ul id="categorys" class="tag_box list-unstyled collapse in">
+          
+  <li>
+    <li><a href="/categories/code/">code<span>2</span></a></li>
+  </li>
+
+    </ul>
+	</div>
+	
+
+	<!-- tags -->
+	
+	<div class="meta-widget">
+	<a data-toggle="collapse" data-target="#tags"><i class="fa fa-tags"></i></a>		  
+    <ul id="tags" class="tag_box list-unstyled collapse in">	  
+	    
+  <li><a href="/tags/hack/">hack<span>1</span></a></li> <li><a href="/tags/sec/">sec<span>1</span></a></li>
+    </ul>
+	</div>
 		
-			
-<div class="widget">
-	<h4>Links</h4>
-	<ul class="blogroll list-unstyled">
-	
-		<li><i class="fa fa-github"></i><a href="https://github.com/wzpan/hexo-theme-freemind" title="Freemind's Github repository." target="_blank"]);">Freemind</a></li>
-	
-		<li><i class="fa fa-github"></i><a href="https://github.com/kristopolous/BOOTSTRA.386" title="BOOTSTRA.386's Github repository." target="_blank"]);">BOOTSTRA.386</a></li>
-	
-		<li><i class="fa fa-github"></i><a href="https://github.com/blackshow/hexo-theme-freemind.386" title="Freemind.386's Github repository." target="_blank"]);">Freemind.386</a></li>
-	
-		<li><i class="fa fa-github"></i><a href="http://www.github.com/blackshow" title="My Github account." target="_blank"]);">My Github</a></li>
-	
-	</ul>
-</div>
 
+	<!-- toc -->
+	<div class="meta-widget">
+	
+	</div>
+	
+    <hr>
+	
+</div><!-- col-md-3 -->
 
+	</div>
 		
-	</div> <!-- sidebar -->
-</div> <!-- col-md-3 -->
 
+</div><!-- row -->
 
 
 
